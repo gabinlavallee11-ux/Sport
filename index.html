@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Family</title>
+    <link rel="manifest" href="manifest.json">
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignal.rit.js" async></script>
+    <script>
+      window.OneSignalDeferred = window.OneSignalDeferred || [];
+      OneSignalDeferred.push(async function(OneSignal) {
+        await OneSignal.init({
+          appId: "TON_ID_ONESIGNAL", // On le remplacera plus tard
+          safari_web_id: "TON_ID_SAFARI", // Optionnel pour plus tard
+          notifyButton: { enable: true },
+        });
+      });
+    </script>
+</head>
+<body style="text-align:center; font-family:sans-serif; padding-top:50px;">
+    <h1>Alerte Sport Papa</h1>
+    <p>Clique sur la cloche en bas pour recevoir les alertes.</p>
+</body>
+</html>
